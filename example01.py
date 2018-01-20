@@ -69,6 +69,26 @@ class Example:
 app = Example()
 #app.test()
 app.set_pozice(4,4)
+
+
+from machine import Pin
+
+
+pin = Pin(0, Pin.IN,  Pin.PULL_UP)
+print(pin.value())
+
+while True:
+    if pin.value() == 0:
+        app.krok("S")
+        time.sleep_ms(500)
+    else:
+        app.krok("J")
+        time.sleep_ms(500)
+
+
+
+
+"""
 while True:
     app.krok("V")
     time.sleep_ms(500)
@@ -89,3 +109,4 @@ while True:
     app.krok("J")
     time.sleep_ms(500)
 
+"""
