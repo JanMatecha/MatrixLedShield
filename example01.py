@@ -30,24 +30,24 @@ class Example:
 
     def posun(self, dx, dy):
         self.matrix.pixel(self.pozice_x, self.pozice_y, self.matrix.OFF)
-        if dx > 0 and self.pozice_x < 7:
+        if dx > 0 and self.pozice_x < 8:
             self.pozice_x = self.pozice_x + dx
-        elif dx > 0 and self.pozice_x >= 7:
-            self.pozice_x = self.pozice_x - 7 + dx
+        elif dx > 0 and self.pozice_x >= 8:
+            self.pozice_x = self.pozice_x - 8 + dx
         elif dx < 0 and self.pozice_x > 0:
             self.pozice_x = self.pozice_x  + dx
         elif dx < 0 and self.pozice_x <= 0:
-            self.pozice_x = self.pozice_x + 7 + dx
+            self.pozice_x = self.pozice_x + 8 + dx
 
 
-        if dy > 0 and self.pozice_y < 7:
+        if dy > 0 and self.pozice_y < 8:
             self.pozice_y = self.pozice_y + dy
-        elif dy > 0 and self.pozice_y >= 7:
-            self.pozice_y = self.pozice_y - 7 + dy
+        elif dy > 0 and self.pozice_y >= 8:
+            self.pozice_y = self.pozice_y - 8 + dy
         elif dy < 0 and self.pozice_y > 0:
             self.pozice_y = self.pozice_y  + dy
         elif dy < 0 and self.pozice_y <= 0:
-            self.pozice_y = self.pozice_y + 7 + dy
+            self.pozice_y = self.pozice_y + 8 + dy
 
 
         self.matrix.pixel(self.pozice_x, self.pozice_y, self.matrix.ON)
