@@ -24,3 +24,13 @@ for x in range(8):
 time.sleep(1)
 matrix.clear()
 matrix.display()
+
+frame = 0x00367F7F3E1C0800
+#frame = 0x0000000000000000
+matrix.frame(frame)
+matrix.display()
+
+time.sleep(1)
+matrix.clear()
+matrix.display()
+
