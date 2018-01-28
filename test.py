@@ -34,3 +34,6 @@ time.sleep(1)
 matrix.clear()
 matrix.display()
 
+def setFrame(frame):
+    matrix.frame(frame)
+    matrix.display()
